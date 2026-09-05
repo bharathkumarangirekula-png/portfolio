@@ -1,0 +1,130 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Title (Bharath Kumar Angirekula - Resume)
+  /Author (Bharath Kumar Angirekula)
+  /Creator (Portfolio Resume Generator)
+  /Producer (AI Studio)
+>>
+endobj
+2 0 obj
+<<
+  /Type /Catalog
+  /Pages 3 0 R
+>>
+endobj
+3 0 obj
+<<
+  /Type /Pages
+  /Kids [4 0 R]
+  /Count 1
+>>
+endobj
+4 0 obj
+<<
+  /Type /Page
+  /Parent 3 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 5 0 R
+  /Resources <<
+    /Font <<
+      /F1 6 0 R
+      /F2 7 0 R
+    >>
+  >>
+>>
+endobj
+5 0 obj
+<<
+  /Length 1240
+>>
+stream
+BT
+/F2 20 Tf
+50 740 Td
+(BHARATH KUMAR ANGIREKULA) Tj
+/F1 11 Tf
+0 -18 Td
+(Software Engineer | Python Developer | AI/ML Enthusiast) Tj
+0 -14 Td
+(Email: bharathkumarangirekula@gmail.com | Phone: +91 9391920174 | Location: Vijayawada, India) Tj
+0 -25 Td
+/F2 14 Tf
+(EDUCATION) Tj
+/F1 11 Tf
+0 -16 Td
+(Bachelor of Technology [B.Tech] in Computer Science & Engineering | 2024 - 2028) Tj
+0 -14 Td
+(Currently pursuing B.Tech - Vijayawada, India) Tj
+0 -25 Td
+/F2 14 Tf
+(TECHNICAL SKILLS) Tj
+/F1 11 Tf
+0 -16 Td
+(Programming Languages: Python, Java, JavaScript, SQL, HTML, CSS) Tj
+0 -14 Td
+(AI & Machine Learning: Machine Learning, Deep Learning, Pandas, NumPy, Scikit-learn) Tj
+0 -14 Td
+(Development: React, Vite, Tailwind CSS, Node.js, Firebase) Tj
+0 -14 Td
+(Developer Tools: Git, GitHub, VS Code, Google Colab) Tj
+0 -25 Td
+/F2 14 Tf
+(FEATURED PROJECTS) Tj
+/F1 11 Tf
+0 -16 Td
+(1. Brain Tumor Detection - AI/ML MRI image analysis assisting in brain tumor pattern detection.) Tj
+0 -14 Td
+(2. Heart Disease Risk Assessment Agent - AI-powered health risk assessment with Streamlit & ML.) Tj
+0 -14 Td
+(3. Women Safety Safe Haven App - React, JavaScript, Firebase real-time safety and assistance.) Tj
+0 -14 Td
+(4. Demand Prediction System - Machine learning forecasting future demand from sales data.) Tj
+0 -14 Td
+(5. AI Interview Practice Platform - Interactive AI platform for student interview readiness.) Tj
+0 -14 Td
+(6. Content Creation Platform - Web-based digital content creation and management platform.) Tj
+0 -25 Td
+/F2 14 Tf
+(HACKATHONS & ACHIEVEMENTS) Tj
+/F1 11 Tf
+0 -16 Td
+(Participated in multiple competitive hackathons building practical tech-driven solutions.) Tj
+0 -14 Td
+(Continuous learner active in building AI/ML and software engineering applications.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+7 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000010 00000 n 
+0000000147 00000 n 
+0000000194 00000 n 
+0000000251 00000 n 
+0000000398 00000 n 
+0000001691 00000 n 
+0000001762 00000 n 
+trailer
+<<
+  /Size 8
+  /Root 2 0 R
+  /Info 1 0 R
+>>
+startxref
+1838
+%%EOF
