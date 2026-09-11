@@ -1,26 +1,46 @@
+import { useState, type ChangeEvent } from 'react';
 import { motion } from 'motion/react';
 import {
-  Code2,
   Download,
   Mail,
   ArrowRight,
   Github,
   Linkedin,
-  Terminal,
   Cpu,
   Database,
   Sparkles,
-  Layers,
-  FileCode2,
+  Upload,
+  ImagePlus,
+  X,
 } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolio.ts';
 
 export default function Hero() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleImageUpload = (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) {
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      setSelectedImage(typeof reader.result === 'string' ? reader.result : null);
+    };
+    reader.readAsDataURL(file);
+    event.target.value = '';
+  };
+
+  const clearImage = () => {
+    setSelectedImage(null);
   };
 
   return (
@@ -147,14 +167,13 @@ export default function Hero() {
             {/* Background Glow */}
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-indigo-500/10 rounded-3xl blur-2xl -z-10" />
 
-            {/* Central Developer Terminal / Code Card */}
+            {/* Profile Photo Upload Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="w-full max-w-md bg-slate-900/90 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-700/70 rounded-2xl shadow-2xl overflow-hidden text-slate-200 font-mono text-xs sm:text-sm"
+              className="w-full max-w-md bg-slate-900/90 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-700/70 rounded-2xl shadow-2xl overflow-hidden text-slate-200"
             >
-              {/* Terminal Window Header */}
               <div className="px-4 py-3 bg-slate-800/90 border-b border-slate-700/60 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-rose-500/80" />
@@ -162,53 +181,64 @@ export default function Hero() {
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
                 </div>
                 <div className="flex items-center gap-1.5 text-xs text-slate-400">
-                  <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>bharath_agent.py</span>
+                  <ImagePlus className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>Profile Photo</span>
                 </div>
-                <div className="text-[10px] text-slate-500">UTF-8</div>
+                <div className="text-[10px] text-slate-500">PNG/JPG</div>
               </div>
 
-              {/* Code Snippet */}
-              <div className="p-4 sm:p-5 space-y-2 leading-relaxed selection:bg-cyan-500/30">
-                <div className="text-slate-500 flex items-center gap-1">
-                  <span># Initializing AI/ML Pipeline</span>
-                </div>
-                <div className="text-pink-400">
-                  <span className="text-purple-400">import</span> tensorflow <span className="text-purple-400">as</span> tf
-                </div>
-                <div className="text-pink-400">
-                  <span className="text-purple-400">from</span> sklearn.model_selection <span className="text-purple-400">import</span> train_test_split
-                </div>
-                <div className="pt-1">
-                  <span className="text-blue-400">class</span> <span className="text-amber-300">SoftwareEngineer</span>:
-                </div>
-                <div className="pl-4 text-slate-300">
-                  <span className="text-blue-400">def</span> <span className="text-emerald-400">__init__</span>(self):
-                </div>
-                <div className="pl-8 text-slate-300">
-                  self.name = <span className="text-cyan-300">"Bharath Kumar"</span>
-                </div>
-                <div className="pl-8 text-slate-300">
-                  self.degree = <span className="text-cyan-300">"B.Tech (2024-2028)"</span>
-                </div>
-                <div className="pl-8 text-slate-300">
-                  self.core = [<span className="text-amber-300">"Python"</span>, <span className="text-amber-300">"AI/ML"</span>, <span className="text-amber-300">"React"</span>]
-                </div>
-                <div className="pl-4 text-slate-300">
-                  <span className="text-blue-400">def</span> <span className="text-emerald-400">build_solution</span>(self, problem):
-                </div>
-                <div className="pl-8 text-slate-300">
-                  <span className="text-purple-400">return</span> self.innovate(problem)
+              <div className="p-4 sm:p-5 space-y-4">
+                <div className="relative">
+                  {selectedImage ? (
+                    <div className="relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-950/60">
+                      <img
+                        src={selectedImage}
+                        alt="Profile preview"
+                        className="h-72 w-full object-cover"
+                      />
+                      <button
+                        type="button"
+                        onClick={clearImage}
+                        className="absolute top-3 right-3 inline-flex items-center justify-center rounded-full bg-slate-950/80 p-2 text-slate-200 transition hover:bg-slate-900"
+                        aria-label="Remove uploaded photo"
+                      >
+                        <X className="h-4 w-4" />
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="flex h-72 w-full flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-700 bg-slate-950/60 px-6 text-center">
+                      <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-cyan-500/10 text-cyan-400">
+                        <Upload className="h-7 w-7" />
+                      </div>
+                      <p className="text-base font-semibold text-slate-100">
+                        Upload a profile photo
+                      </p>
+                      <p className="mt-2 text-sm text-slate-400">
+                        PNG, JPG, or WEBP up to 5MB
+                      </p>
+                    </div>
+                  )}
                 </div>
 
-                {/* Simulated Terminal Execution Box */}
-                <div className="mt-4 pt-3 border-t border-slate-800 bg-slate-950/60 p-2.5 rounded-lg">
-                  <div className="flex items-center gap-2 text-emerald-400 text-xs">
-                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    <span>$ python bharath_agent.py --status</span>
+                <label className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-600/25 transition hover:from-cyan-500 hover:to-blue-500">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageUpload}
+                    className="hidden"
+                  />
+                  <Upload className="h-4 w-4" />
+                  {selectedImage ? 'Change Photo' : 'Upload Photo'}
+                </label>
+
+                <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-3">
+                  <div className="text-[11px] uppercase tracking-[0.2em] text-slate-500">
+                    Status
                   </div>
-                  <div className="text-[11px] text-cyan-300 mt-1">
-                    ✓ Status: Ready to build impactful real-world software
+                  <div className="mt-1 text-xs text-cyan-300">
+                    {selectedImage
+                      ? '✓ Photo ready for profile display'
+                      : 'Waiting for photo upload'}
                   </div>
                 </div>
               </div>
