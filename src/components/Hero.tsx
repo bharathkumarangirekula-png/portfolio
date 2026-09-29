@@ -117,6 +117,16 @@ export default function Hero() {
               </a>
 
               <button
+                id="hero-print-pdf-btn"
+                type="button"
+                onClick={() => window.print()}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-sm sm:text-base hover:-translate-y-0.5 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
+              >
+                <Download className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+                <span>Save as PDF</span>
+              </button>
+
+              <button
                 id="hero-contact-me-btn"
                 onClick={() => scrollTo('contact')}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-sm sm:text-base hover:-translate-y-0.5 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"

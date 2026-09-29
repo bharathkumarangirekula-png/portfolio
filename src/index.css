@@ -5,6 +5,7 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background: #f8fafc;
   }
   code, pre, .font-mono {
     font-family: 'Fira Code', monospace;
@@ -24,4 +25,86 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(100, 116, 139, 0.6);
+}
+
+@media print {
+  html {
+    background: white;
+  }
+
+  body {
+    background: white !important;
+    color: #0f172a !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .dark,
+  .dark * {
+    color: #0f172a !important;
+    background: white !important;
+  }
+
+  nav,
+  footer,
+  #contact,
+  #hero-contact-me-btn,
+  #hero-download-resume-btn,
+  #hero-print-pdf-btn,
+  #cta-get-in-touch-btn,
+  #hero-github-link,
+  #hero-linkedin-link,
+  #hero-email-quick-link,
+  .fixed,
+  .shadow-2xl,
+  .animate-ping,
+  .bg-gradient-to-r,
+  .bg-slate-900\/90,
+  .bg-slate-100\/60,
+  .dark\:bg-slate-900\/40,
+  .dark\:bg-slate-800\/80 {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  main,
+  section,
+  div,
+  p,
+  h1,
+  h2,
+  h3,
+  ul,
+  li,
+  a {
+    color: #0f172a !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-color: rgba(148, 163, 184, 0.7) !important;
+  }
+
+  section {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    page-break-inside: avoid;
+  }
+
+  #home,
+  #about,
+  #skills,
+  #projects,
+  #education,
+  #certifications,
+  #achievements {
+    margin: 0 !important;
+    padding: 0.25rem 0 !important;
+  }
+
+  .max-w-7xl {
+    max-width: 100% !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
 }

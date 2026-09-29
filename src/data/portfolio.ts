@@ -10,39 +10,39 @@ import {
 
 // Configurable placeholders for links - easily updated by the user
 export const SOCIAL_LINKS = {
-  github: 'https://github.com/your-username-placeholder', // Replace with your actual GitHub profile URL
-  linkedin: 'https://linkedin.com/in/your-username-placeholder', // Replace with your actual LinkedIn profile URL
+  github: 'https://github.com/your-username-placeholder',
+  linkedin: 'https://www.linkedin.com/in/bharath-kumar-angirekula',
 };
 
 export const PROJECT_LINKS = {
-  GITHUB_PROJECT_1: 'https://github.com/your-username/brain-tumor-detection',
-  LIVE_DEMO_PROJECT_1: '', // Optional live link
-  GITHUB_PROJECT_2: 'https://github.com/your-username/heart-disease-agent',
+  GITHUB_PROJECT_1: 'https://github.com/your-username/fraud-email-detection',
+  LIVE_DEMO_PROJECT_1: '',
+  GITHUB_PROJECT_2: 'https://github.com/your-username/Resume-Scoring-System',
   LIVE_DEMO_PROJECT_2: '',
-  GITHUB_PROJECT_3: 'https://github.com/your-username/women-safety-safe-haven',
+  GITHUB_PROJECT_3: 'https://github.com/your-username/brain-tumor-detection',
   LIVE_DEMO_PROJECT_3: '',
-  GITHUB_PROJECT_4: 'https://github.com/your-username/demand-prediction-system',
+  GITHUB_PROJECT_4: 'https://github.com/your-username/heart-disease-risk-assessment',
   LIVE_DEMO_PROJECT_4: '',
-  GITHUB_PROJECT_5: 'https://github.com/your-username/ai-interview-practice',
+  GITHUB_PROJECT_5: 'https://github.com/your-username/kidney-disease-prediction',
   LIVE_DEMO_PROJECT_5: '',
-  GITHUB_PROJECT_6: 'https://github.com/your-username/content-creation-platform',
+  GITHUB_PROJECT_6: 'https://github.com/your-username/customer-churn-prediction',
   LIVE_DEMO_PROJECT_6: '',
 };
 
 export const PERSONAL_INFO: PersonalInfo = {
-  name: 'Bharath Kumar Angirekula',
-  role: 'Software Engineer',
-  tagline: 'Software Engineer | Python Developer | AI/ML Enthusiast',
+  name: 'ANGIREKULA BHARATH KUMAR',
+  role: 'Python Developer | AI/ML Engineer | Java Developer',
+  tagline: 'Python Developer | AI/ML Engineer | Java Developer',
   heroDescription:
-    'I am a B.Tech student passionate about software development, artificial intelligence, machine learning, and building practical solutions for real-world problems.',
+    'Computer Science student with hands-on experience in Python, Machine Learning, Deep Learning, SQL, and application development. Skilled in building ML models and deploying practical applications using Scikit-learn, TensorFlow, Streamlit, and FastAPI.',
   aboutText: [
-    'I am Bharath Kumar Angirekula, a B.Tech student and aspiring Software Engineer. I am interested in Python development, Artificial Intelligence, Machine Learning, and software development.',
-    'I enjoy participating in hackathons and developing projects that address real-world problems. Through these experiences, I have developed my programming, problem-solving, teamwork, and project development skills.',
-    'I am continuously learning new technologies and looking for opportunities to apply my skills in practical projects.',
+    'Computer Science student with hands-on experience in Python, Machine Learning, Deep Learning, SQL, and application development. Skilled in building ML models and developing practical applications using Scikit-learn, TensorFlow, Streamlit, and FastAPI.',
+    'I enjoy solving real-world problems through technology and have built projects focused on fraud detection, disease prediction, and AI-powered decision systems. I am passionate about creating impactful digital solutions and expanding my skills in software engineering and AI.',
+    'I am actively seeking opportunities to grow as a software engineer and AI/ML developer while contributing to meaningful projects and team-driven work.',
   ],
   email: 'bharathkumarangirekula@gmail.com',
   phone: '9391920174',
-  location: 'India',
+  location: 'Mylavaram, Andhra Pradesh',
   githubPlaceholder: SOCIAL_LINKS.github,
   linkedinPlaceholder: SOCIAL_LINKS.linkedin,
   resumeFileName: 'Bharath_Kumar_Resume.pdf',
@@ -79,13 +79,13 @@ export const ABOUT_HIGHLIGHTS = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    title: 'Programming',
+    title: 'Programming Languages',
     iconName: 'Terminal',
     skills: [
       { name: 'Python' },
       { name: 'Java' },
-      { name: 'JavaScript' },
       { name: 'SQL' },
+      { name: 'JavaScript' },
       { name: 'HTML' },
       { name: 'CSS' },
     ],
@@ -96,142 +96,123 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: 'Machine Learning' },
       { name: 'Deep Learning' },
+      { name: 'Scikit-learn' },
+      { name: 'TensorFlow' },
       { name: 'Pandas' },
       { name: 'NumPy' },
-      { name: 'Scikit-learn' },
     ],
   },
   {
     title: 'Development',
     iconName: 'Layout',
     skills: [
+      { name: 'Streamlit' },
+      { name: 'FastAPI' },
       { name: 'React' },
       { name: 'Vite' },
       { name: 'Tailwind CSS' },
-      { name: 'Node.js' },
-      { name: 'Firebase' },
     ],
   },
   {
-    title: 'Tools',
+    title: 'Tools & Platforms',
     iconName: 'Wrench',
     skills: [
-      { name: 'Git' },
       { name: 'GitHub' },
       { name: 'VS Code' },
       { name: 'Google Colab' },
+      { name: 'Git' },
+      { name: 'PostgreSQL' },
     ],
   },
 ];
 
 export const PROJECTS: ProjectItem[] = [
   {
-    id: 'brain-tumor-detection',
-    title: 'Brain Tumor Detection',
+    id: 'fraud-email-detection',
+    title: 'Fraud Email Detection System',
     description:
-      'An AI/ML-based project designed to analyze brain MRI images and assist in detecting brain tumor patterns.',
-    technologies: ['Python', 'Machine Learning', 'Deep Learning', 'Image Processing'],
+      'Built and deployed a machine learning model to classify emails as fraudulent or legitimate using Python and Scikit-learn.',
+    technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'Email Classification'],
     githubUrl: PROJECT_LINKS.GITHUB_PROJECT_1,
     liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_1,
     category: 'AI/ML',
     featured: true,
   },
   {
-    id: 'heart-disease-risk-agent',
-    title: 'Heart Disease Risk Assessment Agent',
+    id: 'resume-screening-system',
+    title: 'Resume Screening System',
     description:
-      'An AI-powered health risk assessment project that analyzes input data and provides a risk assessment with useful recommendations.',
-    technologies: ['Python', 'Machine Learning', 'AI Agent', 'Streamlit'],
+      'Developed and deployed an application to screen and evaluate resumes using machine learning techniques.',
+    technologies: ['Python', 'NLP', 'Machine Learning', 'Streamlit'],
     githubUrl: PROJECT_LINKS.GITHUB_PROJECT_2,
     liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_2,
     category: 'AI/ML',
     featured: true,
   },
   {
-    id: 'women-safety-safe-haven',
-    title: 'Women Safety - Safe Haven App',
+    id: 'brain-tumor-detection',
+    title: 'Brain Tumor Detection',
     description:
-      'A technology-based safety application designed to provide useful safety features and emergency assistance for users.',
-    technologies: ['React', 'JavaScript', 'Firebase', 'HTML/CSS'],
+      'Built and deployed a deep learning model to detect brain tumors, delivered as an interactive Streamlit application.',
+    technologies: ['Python', 'Deep Learning', 'TensorFlow', 'Image Processing'],
     githubUrl: PROJECT_LINKS.GITHUB_PROJECT_3,
     liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_3,
-    category: 'Web Development',
+    category: 'AI/ML',
     featured: true,
   },
   {
-    id: 'demand-prediction-system',
-    title: 'Demand Prediction System',
+    id: 'customer-churn-prediction',
+    title: 'Customer Churn Prediction',
     description:
-      'A machine learning project for predicting future product demand using historical sales data.',
-    technologies: ['Python', 'Pandas', 'Machine Learning', 'Regression', 'Forecasting'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_4,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_4,
+      'Developed a machine learning model to predict customer churn and deployed it as a live Streamlit application.',
+    technologies: ['Python', 'Machine Learning', 'Churn Analysis', 'Streamlit'],
+    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_6,
+    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_6,
     category: 'Data Science',
     featured: false,
   },
   {
-    id: 'ai-interview-practice',
-    title: 'AI Interview Practice Platform',
+    id: 'heart-disease-risk-assessment',
+    title: 'Heart Disease Risk Assessment',
     description:
-      'An AI-powered platform that helps students practice interviews, improve communication, and build confidence before real interviews.',
-    technologies: ['React', 'AI', 'JavaScript', 'Firebase'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_5,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_5,
-    category: 'Full Stack',
+      'Designed and deployed a machine learning model to assess heart disease risk through a Streamlit web interface.',
+    technologies: ['Python', 'Machine Learning', 'Healthcare AI', 'Streamlit'],
+    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_4,
+    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_4,
+    category: 'Healthcare AI',
     featured: false,
   },
   {
-    id: 'content-creation-platform',
-    title: 'Content Creation Platform',
+    id: 'kidney-disease-prediction',
+    title: 'Kidney Disease Prediction',
     description:
-      'A web-based platform designed to assist users in creating and managing digital content.',
-    technologies: ['React', 'TypeScript', 'AI', 'Firebase'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_6,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_6,
-    category: 'Web Development',
+      'Built and deployed a machine learning model to predict kidney disease, made accessible via a live Streamlit app.',
+    technologies: ['Python', 'Machine Learning', 'Healthcare AI', 'Streamlit'],
+    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_5,
+    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_5,
+    category: 'Healthcare AI',
     featured: false,
   },
 ];
 
 export const EDUCATION_DATA: EducationItem = {
-  degree: 'B.Tech',
-  duration: '2024 - 2028',
-  location: 'Vijayawada, India',
-  college: 'College Name — Add your college name',
-  status: 'Currently pursuing B.Tech',
+  degree: 'Bachelor of Technology (B.Tech)',
+  duration: 'Currently Pursuing',
+  location: 'Mylavaram, Andhra Pradesh',
+  college: 'Vijayawada, India',
+  status: 'Currently Pursuing',
   description:
-    'Pursuing undergraduate engineering curriculum with a focus on Computer Science, algorithm design, software engineering methodologies, artificial intelligence, and applied machine learning.',
+    'Bachelor of Technology in Computer Science with a focus on software engineering, data structures, artificial intelligence, and machine learning.',
 };
 
 export const CERTIFICATIONS_DATA: CertificationItem[] = [
-  {
-    id: 'cert-1',
-    name: 'Certification 1',
-    issuer: 'Issuing Organization',
-    year: '2024 - 2025',
-    certificateUrl: '#',
-  },
-  {
-    id: 'cert-2',
-    name: 'Certification 2',
-    issuer: 'Issuing Organization',
-    year: '2024 - 2025',
-    certificateUrl: '#',
-  },
-  {
-    id: 'cert-3',
-    name: 'Certification 3',
-    issuer: 'Issuing Organization',
-    year: '2024 - 2025',
-    certificateUrl: '#',
-  },
-  {
-    id: 'cert-4',
-    name: 'Certification 4',
-    issuer: 'Issuing Organization',
-    year: '2024 - 2025',
-    certificateUrl: '#',
-  },
+  { id: 'cert-1', name: 'HP LIFE', issuer: 'HP LIFE', year: '2024', certificateUrl: '#' },
+  { id: 'cert-2', name: 'NPTEL', issuer: 'NPTEL', year: '2024', certificateUrl: '#' },
+  { id: 'cert-3', name: 'Simplilearn SkillUp', issuer: 'Simplilearn', year: '2024', certificateUrl: '#' },
+  { id: 'cert-4', name: 'HCL', issuer: 'HCL', year: '2024', certificateUrl: '#' },
+  { id: 'cert-5', name: 'Salesforce', issuer: 'Salesforce', year: '2024', certificateUrl: '#' },
+  { id: 'cert-6', name: 'IBM', issuer: 'IBM', year: '2024', certificateUrl: '#' },
+  { id: 'cert-7', name: 'AWS', issuer: 'AWS', year: '2024', certificateUrl: '#' },
 ];
 
 export const ACHIEVEMENTS_DATA: AchievementItem[] = [
@@ -239,21 +220,21 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     id: 'ach-1',
     title: 'Hackathon Participation',
     description:
-      'Participated in multiple hackathons and worked on technology-based solutions for real-world problem statements.',
+      'Participated in multiple hackathons; reached the finalist round at VIT-AP University.',
     iconName: 'Trophy',
   },
   {
     id: 'ach-2',
     title: 'Project Development',
     description:
-      'Developed multiple projects involving AI, machine learning, software development, and web technologies.',
+      'Developed multiple machine learning and software projects focused on real-world problem solving and practical deployment.',
     iconName: 'Rocket',
   },
   {
     id: 'ach-3',
     title: 'Continuous Learning',
     description:
-      'Continuously improving programming, development, AI, and machine learning skills through practical projects and certifications.',
+      'Constantly improving through hands-on learning, certifications, and building AI-driven applications.',
     iconName: 'TrendingUp',
   },
 ];
