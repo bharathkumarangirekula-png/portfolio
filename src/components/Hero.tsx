@@ -83,11 +83,11 @@ export default function Hero() {
 
             {/* Sub-headline / Role */}
             <p className="text-lg sm:text-xl font-semibold text-slate-700 dark:text-slate-300 mb-5 flex items-center flex-wrap gap-2">
-              <span>Software Engineer</span>
-              <span className="text-slate-400 dark:text-slate-600">|</span>
               <span className="text-cyan-600 dark:text-cyan-400">Python Developer</span>
               <span className="text-slate-400 dark:text-slate-600">|</span>
-              <span className="text-indigo-600 dark:text-indigo-400">AI/ML Enthusiast</span>
+              <span className="text-indigo-600 dark:text-indigo-400">AI/ML Engineer</span>
+              <span className="text-slate-400 dark:text-slate-600">|</span>
+              <span className="text-blue-600 dark:text-blue-400">Java Developer</span>
             </p>
 
             {/* Description */}

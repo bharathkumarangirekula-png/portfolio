@@ -8,25 +8,49 @@ import {
   PersonalInfo,
 } from '../types.ts';
 
-// Configurable placeholders for links - easily updated by the user
+// Configurable social links and repositories
 export const SOCIAL_LINKS = {
-  github: 'https://github.com/your-username-placeholder',
-  linkedin: 'https://www.linkedin.com/in/bharath-kumar-angirekula',
+  github: 'https://github.com/bharathkumarangirekula-png',
+  linkedin: 'https://www.linkedin.com/in/bharath-kumar-angirekula-8a2728362/',
 };
 
 export const PROJECT_LINKS = {
-  GITHUB_PROJECT_1: 'https://github.com/your-username/fraud-email-detection',
-  LIVE_DEMO_PROJECT_1: '',
-  GITHUB_PROJECT_2: 'https://github.com/your-username/Resume-Scoring-System',
-  LIVE_DEMO_PROJECT_2: '',
-  GITHUB_PROJECT_3: 'https://github.com/your-username/brain-tumor-detection',
-  LIVE_DEMO_PROJECT_3: '',
-  GITHUB_PROJECT_4: 'https://github.com/your-username/heart-disease-risk-assessment',
-  LIVE_DEMO_PROJECT_4: '',
-  GITHUB_PROJECT_5: 'https://github.com/your-username/kidney-disease-prediction',
-  LIVE_DEMO_PROJECT_5: '',
-  GITHUB_PROJECT_6: 'https://github.com/your-username/customer-churn-prediction',
-  LIVE_DEMO_PROJECT_6: '',
+  // Direct GitHub Repositories
+  FRAUD_EMAIL: 'https://github.com/bharathkumarangirekula-png/Fraud-Email-Classifier',
+  FRAUD_EMAIL_LIVE: 'https://fraud-email-classifier.vercel.app/',
+  
+  RESUME_SCREENING: 'https://github.com/bharathkumarangirekula-png/resume-screening-system',
+  RESUME_SCREENING_LIVE: 'https://resume-screening-system-pi-nine.vercel.app/',
+  
+  BRAIN_TUMOR: 'https://github.com/bharathkumarangirekula-png/brain-Tumor',
+  BRAIN_TUMOR_LIVE: 'https://brain-tumor-3tltrwfrhmxpyaprejxepx.streamlit.app/',
+  
+  HEART_DISEASE: 'https://github.com/bharathkumarangirekula-png/Heart-Disease-Risk-Assesment',
+  HEART_DISEASE_LIVE: 'https://bharathkumarangirekula-png-kaq2yphfua6rmjksantenm.streamlit.app/',
+  
+  KIDNEY_DISEASE: 'https://github.com/bharathkumarangirekula-png/kidney-disease',
+  KIDNEY_DISEASE_LIVE: 'https://kidney-disease-3kouwnhtcm9yjv5f9swksv.streamlit.app/',
+  
+  CUSTOMER_CHURN: 'https://github.com/bharathkumarangirekula-png/customer-churn-prediction',
+  CUSTOMER_CHURN_LIVE: 'https://customer-churn-prediction-pjph5be4whpysa7daxqbud.streamlit.app/',
+  
+  GENUINE_AI: 'https://github.com/bharathkumarangirekula-png/GENUINE-AI1',
+  GENUINE_AI_LIVE: 'https://genuine-ai-1.vercel.app',
+  
+  CONTENT_CREATION: 'https://github.com/bharathkumarangirekula-png/CONTENT-CREATION',
+  CONTENT_CREATION_LIVE: 'https://smartcontentmaker.vercel.app',
+  
+  PORTFOLIO: 'https://github.com/bharathkumarangirekula-png/portfolio',
+  PORTFOLIO_LIVE: 'https://portfolio-omega-mauve-tovgw0e3vy.vercel.app',
+  
+  RYTHU_REPORT: 'https://github.com/bharathkumarangirekula-png/Rythu-Report',
+  TRENDPULSE: 'https://github.com/bharathkumarangirekula-png/trendpulse-bharath',
+  CONFIDENCE_BUILDER: 'https://github.com/bharathkumarangirekula-png/confidence-Builder',
+  CONFIDENT_AI: 'https://github.com/bharathkumarangirekula-png/confident-',
+  VENDOR_INTELLIGENCE: 'https://github.com/bharathkumarangirekula-png/Vendor-Reliability-Intelligence-Platform',
+  SLEEP_HEALTH: 'https://github.com/bharathkumarangirekula-png/Sleep-Health-Assistant',
+  HEART_AGENT: 'https://github.com/bharathkumarangirekula-png/Heart-Disease-Risk-Assessment-Agent',
+  FAKE_PRODUCT: 'https://github.com/bharathkumarangirekula-png/pandu123',
 };
 
 export const PERSONAL_INFO: PersonalInfo = {
@@ -34,11 +58,11 @@ export const PERSONAL_INFO: PersonalInfo = {
   role: 'Python Developer | AI/ML Engineer | Java Developer',
   tagline: 'Python Developer | AI/ML Engineer | Java Developer',
   heroDescription:
-    'Computer Science student with hands-on experience in Python, Machine Learning, Deep Learning, SQL, and application development. Skilled in building ML models and deploying practical applications using Scikit-learn, TensorFlow, Streamlit, and FastAPI.',
+    'Computer Science student with hands-on experience in Python, Machine Learning, Deep Learning, SQL, and application development. Skilled in building ML models and deploying practical applications using Scikit-learn, TensorFlow, Streamlit, and FastAPI. Strong problem-solving skills with a keen interest in AI/ML and software development.',
   aboutText: [
-    'Computer Science student with hands-on experience in Python, Machine Learning, Deep Learning, SQL, and application development. Skilled in building ML models and developing practical applications using Scikit-learn, TensorFlow, Streamlit, and FastAPI.',
-    'I enjoy solving real-world problems through technology and have built projects focused on fraud detection, disease prediction, and AI-powered decision systems. I am passionate about creating impactful digital solutions and expanding my skills in software engineering and AI.',
-    'I am actively seeking opportunities to grow as a software engineer and AI/ML developer while contributing to meaningful projects and team-driven work.',
+    'Computer Science student with hands-on experience in Python, Machine Learning, Deep Learning, SQL, and application development. Skilled in building ML models and deploying practical applications using Scikit-learn, TensorFlow, Streamlit, and FastAPI. Strong problem-solving skills with a keen interest in AI/ML and software development.',
+    'I have built and deployed over 17 GitHub projects including live machine learning applications, deep learning medical diagnostics, fraud detection systems, full-stack creator platforms, and predictive analytics tools.',
+    'I actively explore scalable software architecture, modern AI capabilities, and algorithmic problem-solving. Reached the finalist round at VIT-AP University hackathon and continuously expand my skill set through industry credentials.',
   ],
   email: 'bharathkumarangirekula@gmail.com',
   phone: '9391920174',
@@ -63,17 +87,17 @@ export const ABOUT_HIGHLIGHTS = [
   {
     icon: 'GraduationCap',
     title: 'B.Tech Student',
-    description: 'Pursuing Computer Science & Engineering (2024 - 2028)',
+    description: 'Currently Pursuing B.Tech with strong foundation in CS, ML & Software Engineering',
   },
   {
     icon: 'Code2',
     title: 'Software Development',
-    description: 'Building responsive applications, robust APIs, and clean systems',
+    description: 'Proficient in Python, Java, SQL, Streamlit, FastAPI, and robust application logic',
   },
   {
     icon: 'Bot',
     title: 'AI & Machine Learning',
-    description: 'Passionate about predictive modeling, deep learning & AI agents',
+    description: 'Practical model building and deployment with Scikit-learn and TensorFlow',
   },
 ];
 
@@ -85,43 +109,44 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: 'Python' },
       { name: 'Java' },
       { name: 'SQL' },
-      { name: 'JavaScript' },
-      { name: 'HTML' },
-      { name: 'CSS' },
     ],
   },
   {
-    title: 'AI & Machine Learning',
+    title: 'Machine Learning',
     iconName: 'Cpu',
     skills: [
-      { name: 'Machine Learning' },
-      { name: 'Deep Learning' },
       { name: 'Scikit-learn' },
       { name: 'TensorFlow' },
-      { name: 'Pandas' },
-      { name: 'NumPy' },
+      { name: 'Deep Learning' },
+      { name: 'Machine Learning' },
     ],
   },
   {
-    title: 'Development',
+    title: 'Web Development',
     iconName: 'Layout',
     skills: [
+      { name: 'HTML' },
+      { name: 'CSS' },
+      { name: 'JavaScript' },
       { name: 'Streamlit' },
       { name: 'FastAPI' },
-      { name: 'React' },
-      { name: 'Vite' },
-      { name: 'Tailwind CSS' },
+    ],
+  },
+  {
+    title: 'Database',
+    iconName: 'Database',
+    skills: [
+      { name: 'MySQL' },
     ],
   },
   {
     title: 'Tools & Platforms',
     iconName: 'Wrench',
     skills: [
+      { name: 'Git' },
       { name: 'GitHub' },
       { name: 'VS Code' },
       { name: 'Google Colab' },
-      { name: 'Git' },
-      { name: 'PostgreSQL' },
     ],
   },
 ];
@@ -129,112 +154,308 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const PROJECTS: ProjectItem[] = [
   {
     id: 'fraud-email-detection',
-    title: 'Fraud Email Detection System',
+    title: 'Fraud & Spam Email Classifier',
     description:
-      'Built and deployed a machine learning model to classify emails as fraudulent or legitimate using Python and Scikit-learn.',
-    technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'Email Classification'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_1,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_1,
+      'Machine learning web application that classifies email text as spam/fraud or legitimate using TF-IDF feature extraction and Scikit-learn Logistic Regression.',
+    technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'TF-IDF', 'Vercel'],
+    githubUrl: PROJECT_LINKS.FRAUD_EMAIL,
+    liveDemoUrl: PROJECT_LINKS.FRAUD_EMAIL_LIVE,
     category: 'AI/ML',
     featured: true,
   },
   {
     id: 'resume-screening-system',
-    title: 'Resume Screening System',
+    title: 'AI Resume Screening & Ranking System',
     description:
-      'Developed and deployed an application to screen and evaluate resumes using machine learning techniques.',
-    technologies: ['Python', 'NLP', 'Machine Learning', 'Streamlit'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_2,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_2,
+      'Intelligent full-stack candidate evaluation system that extracts structured text from PDF resumes, tokenizes skills, and ranks candidates using TF-IDF cosine similarity.',
+    technologies: ['Python', 'Flask', 'NLP', 'Scikit-learn', 'PyPDF', 'Vercel'],
+    githubUrl: PROJECT_LINKS.RESUME_SCREENING,
+    liveDemoUrl: PROJECT_LINKS.RESUME_SCREENING_LIVE,
+    category: 'AI/ML',
+    featured: true,
+  },
+  {
+    id: 'vericheck-genuine-ai',
+    title: 'VeriCheck AI — Product Authenticity Verification',
+    description:
+      'High-precision product verification system designed to detect counterfeit goods using advanced neural analysis and computer vision image scanning.',
+    technologies: ['TypeScript', 'React', 'Computer Vision', 'Neural Networks', 'Vercel'],
+    githubUrl: PROJECT_LINKS.GENUINE_AI,
+    liveDemoUrl: PROJECT_LINKS.GENUINE_AI_LIVE,
     category: 'AI/ML',
     featured: true,
   },
   {
     id: 'brain-tumor-detection',
-    title: 'Brain Tumor Detection',
+    title: 'Brain Tumor & Stroke Assessment',
     description:
-      'Built and deployed a deep learning model to detect brain tumors, delivered as an interactive Streamlit application.',
-    technologies: ['Python', 'Deep Learning', 'TensorFlow', 'Image Processing'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_3,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_3,
+      'Deep learning computer vision diagnostic system to detect brain tumors and evaluate neurological risk probabilities, deployed with a live Streamlit interface.',
+    technologies: ['Python', 'Deep Learning', 'TensorFlow', 'Computer Vision', 'Streamlit'],
+    githubUrl: PROJECT_LINKS.BRAIN_TUMOR,
+    liveDemoUrl: PROJECT_LINKS.BRAIN_TUMOR_LIVE,
     category: 'AI/ML',
     featured: true,
-  },
-  {
-    id: 'customer-churn-prediction',
-    title: 'Customer Churn Prediction',
-    description:
-      'Developed a machine learning model to predict customer churn and deployed it as a live Streamlit application.',
-    technologies: ['Python', 'Machine Learning', 'Churn Analysis', 'Streamlit'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_6,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_6,
-    category: 'Data Science',
-    featured: false,
   },
   {
     id: 'heart-disease-risk-assessment',
     title: 'Heart Disease Risk Assessment',
     description:
-      'Designed and deployed a machine learning model to assess heart disease risk through a Streamlit web interface.',
-    technologies: ['Python', 'Machine Learning', 'Healthcare AI', 'Streamlit'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_4,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_4,
-    category: 'Healthcare AI',
-    featured: false,
+      'Clinical decision-support machine learning model evaluating patient cardiovascular parameters to predict coronary heart disease risk.',
+    technologies: ['Python', 'Machine Learning', 'Healthcare AI', 'Scikit-learn', 'Streamlit'],
+    githubUrl: PROJECT_LINKS.HEART_DISEASE,
+    liveDemoUrl: PROJECT_LINKS.HEART_DISEASE_LIVE,
+    category: 'AI/ML',
+    featured: true,
   },
   {
     id: 'kidney-disease-prediction',
-    title: 'Kidney Disease Prediction',
+    title: 'Chronic Kidney Disease Prediction',
     description:
-      'Built and deployed a machine learning model to predict kidney disease, made accessible via a live Streamlit app.',
-    technologies: ['Python', 'Machine Learning', 'Healthcare AI', 'Streamlit'],
-    githubUrl: PROJECT_LINKS.GITHUB_PROJECT_5,
-    liveDemoUrl: PROJECT_LINKS.LIVE_DEMO_PROJECT_5,
-    category: 'Healthcare AI',
+      'Machine learning clinical diagnostic model predicting kidney disease stages from physiological and biochemical markers via an interactive Streamlit app.',
+    technologies: ['Python', 'Machine Learning', 'Healthcare AI', 'Scikit-learn', 'Streamlit'],
+    githubUrl: PROJECT_LINKS.KIDNEY_DISEASE,
+    liveDemoUrl: PROJECT_LINKS.KIDNEY_DISEASE_LIVE,
+    category: 'AI/ML',
+    featured: true,
+  },
+  {
+    id: 'customer-churn-prediction',
+    title: 'Customer Churn Prediction Model',
+    description:
+      'Predictive analytics classification model designed to forecast customer attrition risk and support proactive retention strategies.',
+    technologies: ['Python', 'Machine Learning', 'Scikit-learn', 'Predictive Analytics', 'Streamlit'],
+    githubUrl: PROJECT_LINKS.CUSTOMER_CHURN,
+    liveDemoUrl: PROJECT_LINKS.CUSTOMER_CHURN_LIVE,
+    category: 'Data Science',
+    featured: true,
+  },
+  {
+    id: 'creatoros-content-creation',
+    title: 'CreatorOS — AI Content Engine',
+    description:
+      'Neural content orchestration platform automating multi-format marketing, copywriting, and media production pipelines for creators and modern brands.',
+    technologies: ['TypeScript', 'React', 'Generative AI', 'Tailwind CSS', 'Vercel'],
+    githubUrl: PROJECT_LINKS.CONTENT_CREATION,
+    liveDemoUrl: PROJECT_LINKS.CONTENT_CREATION_LIVE,
+    category: 'Full Stack',
+    featured: true,
+  },
+  {
+    id: 'rythu-report',
+    title: 'Rythu Report — Farmer Digital Records Portal',
+    description:
+      'Mobile-friendly agricultural record management and resource portal designed especially for rural farmers with multilingual support in Telugu, English, and Hindi.',
+    technologies: ['TypeScript', 'React', 'Vite', 'Tailwind CSS', 'i18n'],
+    githubUrl: PROJECT_LINKS.RYTHU_REPORT,
+    category: 'Web Development',
+    featured: true,
+  },
+  {
+    id: 'trendpulse-hacker-news',
+    title: 'TrendPulse — Real-Time Tech Analytics Pipeline',
+    description:
+      'Real-time data pipeline and interactive analytics dashboard tracking Hacker News developer trends, engagement velocity, and community sentiment.',
+    technologies: ['Python', 'Data Analytics', 'REST API', 'Data Visualization', 'HTML/CSS'],
+    githubUrl: PROJECT_LINKS.TRENDPULSE,
+    category: 'Data Science',
+    featured: false,
+  },
+  {
+    id: 'vendor-reliability-intelligence',
+    title: 'Vendor Reliability Intelligence Platform',
+    description:
+      'Enterprise intelligence platform assessing vendor fulfillment, SLA benchmark compliance, and delivery risk scores with predictive analytics.',
+    technologies: ['TypeScript', 'React', 'Predictive Analytics', 'Tailwind CSS', 'Vite'],
+    githubUrl: PROJECT_LINKS.VENDOR_INTELLIGENCE,
+    category: 'Full Stack',
+    featured: false,
+  },
+  {
+    id: 'confidence-builder',
+    title: 'Confidence Builder AI Assistant',
+    description:
+      'Interactive conversational coaching assistant helping users practice public speaking, prepare for interviews, and build communication confidence.',
+    technologies: ['TypeScript', 'React', 'Google Gemini AI', 'Tailwind CSS'],
+    githubUrl: PROJECT_LINKS.CONFIDENCE_BUILDER,
+    category: 'AI/ML',
+    featured: false,
+  },
+  {
+    id: 'fake-product-detection',
+    title: 'Fake Product & Counterfeit Detection',
+    description:
+      'AI verification system identifying counterfeit listings and suspicious merchandise across online marketplaces using pattern classification.',
+    technologies: ['TypeScript', 'React', 'AI Verification', 'Tailwind CSS'],
+    githubUrl: PROJECT_LINKS.FAKE_PRODUCT,
+    category: 'AI/ML',
+    featured: false,
+  },
+  {
+    id: 'sleep-health-assistant',
+    title: 'Sleep Health & Wellness Assistant',
+    description:
+      'Health advisory analytics tool analyzing circadian rhythms, sleep duration metrics, and lifestyle parameters to recommend customized sleep habits.',
+    technologies: ['Python', 'Machine Learning', 'Healthcare Analytics', 'Data Science'],
+    githubUrl: PROJECT_LINKS.SLEEP_HEALTH,
+    category: 'AI/ML',
+    featured: false,
+  },
+  {
+    id: 'heart-disease-assessment-agent',
+    title: 'Heart Disease Risk Assessment Agent',
+    description:
+      'Automated medical reasoning agent performing multi-factor cardiovascular risk evaluation and clinical decision support.',
+    technologies: ['Python', 'AI Agents', 'Healthcare AI', 'Scikit-learn'],
+    githubUrl: PROJECT_LINKS.HEART_AGENT,
+    category: 'AI/ML',
+    featured: false,
+  },
+  {
+    id: 'confident-ai-companion',
+    title: 'Confident AI — Self-Efficacy Companion',
+    description:
+      'Personalized AI companion providing guided positive reinforcement, emotional clarity, and speech preparation powered by Google AI Studio.',
+    technologies: ['TypeScript', 'React', 'Gemini AI', 'Tailwind CSS'],
+    githubUrl: PROJECT_LINKS.CONFIDENT_AI,
+    category: 'AI/ML',
+    featured: false,
+  },
+  {
+    id: 'developer-portfolio',
+    title: 'Developer Portfolio & Interactive Showcase',
+    description:
+      'Modern, high-performance portfolio application built with React, Vite, and Tailwind CSS featuring dark mode, animations, and live GitHub integration.',
+    technologies: ['TypeScript', 'React 19', 'Tailwind CSS', 'Motion', 'Vercel'],
+    githubUrl: PROJECT_LINKS.PORTFOLIO,
+    liveDemoUrl: PROJECT_LINKS.PORTFOLIO_LIVE,
+    category: 'Full Stack',
     featured: false,
   },
 ];
 
-export const EDUCATION_DATA: EducationItem = {
-  degree: 'Bachelor of Technology (B.Tech)',
-  duration: 'Currently Pursuing',
-  location: 'Mylavaram, Andhra Pradesh',
-  college: 'Vijayawada, India',
-  status: 'Currently Pursuing',
-  description:
-    'Bachelor of Technology in Computer Science with a focus on software engineering, data structures, artificial intelligence, and machine learning.',
-};
+export const EDUCATION_DATA: EducationItem[] = [
+  {
+    id: 'edu-1',
+    degree: 'Bachelor of Technology (B.Tech)',
+    institution: 'Engineering University / College',
+    duration: 'Currently Pursuing',
+    location: 'Vijayawada, Andhra Pradesh',
+    status: 'Currently Pursuing',
+    description:
+      'Computer Science student with hands-on coursework and practical focus in Machine Learning, Deep Learning, SQL, and Application Development.',
+    coursework: [
+      'Data Structures & Algorithms',
+      'Machine Learning & Deep Learning',
+      'Database Management Systems (MySQL)',
+      'Object-Oriented Programming (Java/Python)',
+      'Web Development & APIs (FastAPI)',
+    ],
+  },
+  {
+    id: 'edu-2',
+    degree: 'Intermediate',
+    institution: 'Sri Chaitanya, Vijayawada',
+    duration: 'Completed',
+    location: 'Vijayawada, Andhra Pradesh',
+    score: '95%',
+    status: '95%',
+    description:
+      'Higher secondary education in Mathematics, Physics, and Chemistry (MPC) with academic distinction.',
+    coursework: ['Mathematics', 'Physics', 'Chemistry'],
+  },
+  {
+    id: 'edu-3',
+    degree: 'Schooling',
+    institution: 'Gowtham English Medium High School, Mylavaram',
+    duration: 'Completed',
+    location: 'Mylavaram, Andhra Pradesh',
+    score: '75%',
+    status: '75%',
+    description:
+      'Secondary School Certificate (SSC) with a strong foundation in science, mathematics, and English communication.',
+    coursework: ['General Science', 'Mathematics', 'English', 'Social Studies'],
+  },
+];
 
 export const CERTIFICATIONS_DATA: CertificationItem[] = [
-  { id: 'cert-1', name: 'HP LIFE', issuer: 'HP LIFE', year: '2024', certificateUrl: '#' },
-  { id: 'cert-2', name: 'NPTEL', issuer: 'NPTEL', year: '2024', certificateUrl: '#' },
-  { id: 'cert-3', name: 'Simplilearn SkillUp', issuer: 'Simplilearn', year: '2024', certificateUrl: '#' },
-  { id: 'cert-4', name: 'HCL', issuer: 'HCL', year: '2024', certificateUrl: '#' },
-  { id: 'cert-5', name: 'Salesforce', issuer: 'Salesforce', year: '2024', certificateUrl: '#' },
-  { id: 'cert-6', name: 'IBM', issuer: 'IBM', year: '2024', certificateUrl: '#' },
-  { id: 'cert-7', name: 'AWS', issuer: 'AWS', year: '2024', certificateUrl: '#' },
+  {
+    id: 'cert-1',
+    name: 'Infosys Certification',
+    issuer: 'Infosys',
+    year: '2024',
+    certificateUrl: '#',
+  },
+  {
+    id: 'cert-2',
+    name: 'HP LIFE Certification',
+    issuer: 'HP LIFE Foundation',
+    year: '2024',
+    certificateUrl: '#',
+  },
+  {
+    id: 'cert-3',
+    name: 'NIPAM Certification',
+    issuer: 'National IP Awareness Mission',
+    year: '2024',
+    certificateUrl: '#',
+  },
+  {
+    id: 'cert-4',
+    name: 'Simplilearn SkillUp',
+    issuer: 'Simplilearn',
+    year: '2024',
+    certificateUrl: '#',
+  },
+  {
+    id: 'cert-5',
+    name: 'HCL Certification',
+    issuer: 'HCL Tech',
+    year: '2024',
+    certificateUrl: '#',
+  },
+  {
+    id: 'cert-6',
+    name: 'Salesforce Certification',
+    issuer: 'Salesforce',
+    year: '2024',
+    certificateUrl: '#',
+  },
+  {
+    id: 'cert-7',
+    name: 'IBM Certification',
+    issuer: 'IBM SkillsBuild',
+    year: '2024',
+    certificateUrl: '#',
+  },
+  {
+    id: 'cert-8',
+    name: 'AWS Certification',
+    issuer: 'Amazon Web Services (AWS)',
+    year: '2024',
+    certificateUrl: '#',
+  },
 ];
 
 export const ACHIEVEMENTS_DATA: AchievementItem[] = [
   {
     id: 'ach-1',
-    title: 'Hackathon Participation',
+    title: 'VIT-AP University Hackathon Finalist',
     description:
-      'Participated in multiple hackathons; reached the finalist round at VIT-AP University.',
+      'Participated in multiple competitive hackathons and reached the prestigious finalist round at VIT-AP University.',
     iconName: 'Trophy',
   },
   {
     id: 'ach-2',
-    title: 'Project Development',
+    title: '17+ GitHub Projects & 8 Live Deployments',
     description:
-      'Developed multiple machine learning and software projects focused on real-world problem solving and practical deployment.',
+      'Engineered and published 17+ open-source repositories and deployed live applications on Streamlit Community Cloud and Vercel covering healthcare AI, NLP, full-stack tools, and analytics.',
     iconName: 'Rocket',
   },
   {
     id: 'ach-3',
-    title: 'Continuous Learning',
+    title: '8 Multi-Platform Industry Certifications',
     description:
-      'Constantly improving through hands-on learning, certifications, and building AI-driven applications.',
+      'Validated technical knowledge through recognized industry programs from AWS, IBM, Salesforce, Infosys, HP LIFE, NIPAM, HCL, and Simplilearn.',
     iconName: 'TrendingUp',
   },
 ];

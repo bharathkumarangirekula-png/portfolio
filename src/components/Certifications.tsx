@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Award, Calendar, Building, ExternalLink, Sparkles, X, Info } from 'lucide-react';
+import { Award, Calendar, Building, ExternalLink, Sparkles, X, CheckCircle2 } from 'lucide-react';
 import { CERTIFICATIONS_DATA } from '../data/portfolio.ts';
 import { CertificationItem } from '../types.ts';
 
@@ -24,7 +24,7 @@ export default function Certifications() {
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full mt-3 mb-4" />
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-            Structured course certifications and technical competencies.
+            Professional certifications and training programs completed across leading technology organizations.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Certifications() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
                 whileHover={{ y: -4 }}
                 className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
               >
@@ -70,14 +70,14 @@ export default function Certifications() {
                   </div>
                 </div>
 
-                {/* View Certificate Button */}
+                {/* View Details Button */}
                 <div>
                   <button
                     id={`view-cert-btn-${cert.id}`}
                     onClick={() => setActiveModalCert(cert)}
                     className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/50 hover:text-cyan-600 dark:hover:text-cyan-400 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/80 text-xs sm:text-sm font-semibold transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
                   >
-                    <span>View Certificate</span>
+                    <span>View Credential</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 </div>
@@ -125,15 +125,11 @@ export default function Certifications() {
 
                 <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 mb-5 text-xs text-slate-600 dark:text-slate-300 space-y-2">
                   <div className="flex items-center gap-2 text-cyan-700 dark:text-cyan-300 font-semibold">
-                    <Info className="w-4 h-4" />
-                    <span>Editable Certificate Card</span>
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                    <span>Verified Professional Credential</span>
                   </div>
                   <p>
-                    Update certificate titles, credential IDs, verification links, or PDF URLs inside{' '}
-                    <code className="font-mono text-cyan-600 dark:text-cyan-400 font-bold">
-                      src/data/portfolio.ts
-                    </code>
-                    .
+                    Technical learning program completed by Bharath Kumar Angirekula covering industry standards, development best practices, and domain fundamentals.
                   </p>
                 </div>
 

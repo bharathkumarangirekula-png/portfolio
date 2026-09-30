@@ -4,10 +4,8 @@ import {
   Cpu,
   Layout,
   Wrench,
-  Code,
-  Sparkles,
   Database,
-  Layers,
+  Code,
   CheckCircle2,
   Boxes,
 } from 'lucide-react';
@@ -22,6 +20,8 @@ export default function Skills() {
         return Cpu;
       case 'Layout':
         return Layout;
+      case 'Database':
+        return Database;
       case 'Wrench':
         return Wrench;
       default:
@@ -38,6 +38,8 @@ export default function Skills() {
       case 2:
         return 'bg-cyan-50 dark:bg-cyan-950/40 text-cyan-700 dark:text-cyan-300 border-cyan-200 dark:border-cyan-900/60 hover:bg-cyan-100 dark:hover:bg-cyan-900/60';
       case 3:
+        return 'bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-900/60 hover:bg-amber-100 dark:hover:bg-amber-900/60';
+      case 4:
         return 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-900/60 hover:bg-emerald-100 dark:hover:bg-emerald-900/60';
       default:
         return 'bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700';
@@ -51,19 +53,19 @@ export default function Skills() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-cyan-600 dark:text-cyan-400 mb-2">
             <Boxes className="w-3.5 h-3.5" />
-            <span>Core Competencies</span>
+            <span>Technical Skills</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Technical Skills
+            Core Competencies
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full mx-auto mt-3 mb-4" />
           <p className="text-slate-600 dark:text-slate-400 text-base max-w-2xl mx-auto">
-            Practical programming capabilities, machine learning frameworks, modern web toolchains, and developer environments.
+            Technical skillset across programming languages, machine learning frameworks, full-stack web toolchains, and developer environments.
           </p>
         </div>
 
         {/* Skill Category Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {SKILL_CATEGORIES.map((category, catIdx) => {
             const Icon = getCategoryIcon(category.iconName);
             const badgeStyle = getSkillBadgeColor(catIdx);
@@ -74,7 +76,7 @@ export default function Skills() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.5, delay: catIdx * 0.1 }}
+                transition={{ duration: 0.5, delay: catIdx * 0.08 }}
                 whileHover={{ y: -4 }}
                 className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
@@ -85,11 +87,11 @@ export default function Skills() {
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-lg text-slate-900 dark:text-white">
+                      <h3 className="font-bold text-base text-slate-900 dark:text-white">
                         {category.title}
                       </h3>
                       <span className="text-xs text-slate-500 dark:text-slate-400">
-                        {category.skills.length} competencies
+                        {category.skills.length} skills
                       </span>
                     </div>
                   </div>
@@ -110,7 +112,7 @@ export default function Skills() {
 
                 {/* Footer category highlight */}
                 <div className="mt-6 pt-3 border-t border-slate-100 dark:border-slate-800/80 text-[11px] text-slate-400 dark:text-slate-500 font-mono flex items-center justify-between">
-                  <span>Category {catIdx + 1}/4</span>
+                  <span>0{catIdx + 1} / 0{SKILL_CATEGORIES.length}</span>
                   <span>Active stack</span>
                 </div>
               </motion.div>

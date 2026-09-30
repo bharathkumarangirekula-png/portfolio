@@ -24,12 +24,15 @@ export interface ProjectItem {
 }
 
 export interface EducationItem {
+  id: string;
   degree: string;
-  duration: string;
-  location: string;
-  college: string;
+  institution: string;
+  duration?: string;
+  location?: string;
+  score?: string;
   status: string;
   description?: string;
+  coursework?: string[];
 }
 
 export interface CertificationItem {

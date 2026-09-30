@@ -8,8 +8,8 @@ export default function About() {
       icon: GraduationCap,
       badge: '🎓',
       title: 'B.Tech Student',
-      subtitle: '2024 - 2028',
-      description: 'Computer Science & Engineering student focused on building strong algorithmic foundations.',
+      subtitle: 'Currently Pursuing',
+      description: 'Computer Science student with hands-on experience in Python, Machine Learning, Deep Learning, SQL, and application development.',
       accent: 'from-blue-500/20 to-cyan-500/20 border-blue-200 dark:border-blue-900/60',
       iconBg: 'bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400',
     },
@@ -17,8 +17,8 @@ export default function About() {
       icon: Code2,
       badge: '💻',
       title: 'Software Development',
-      subtitle: 'Core Focus',
-      description: 'Building reliable applications, clean architectures, and practical solutions to address real problems.',
+      subtitle: 'Python, Java & SQL',
+      description: 'Building robust applications with clean code, REST APIs, and reactive web interfaces using FastAPI & Streamlit.',
       accent: 'from-cyan-500/20 to-teal-500/20 border-cyan-200 dark:border-cyan-900/60',
       iconBg: 'bg-cyan-100 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400',
     },
@@ -26,8 +26,8 @@ export default function About() {
       icon: Bot,
       badge: '🤖',
       title: 'AI & Machine Learning',
-      subtitle: 'Applied Intelligence',
-      description: 'Exploring machine learning models, neural networks, image classification, and predictive analytics.',
+      subtitle: 'Scikit-learn & TensorFlow',
+      description: 'Developing predictive models, neural networks, and deploying practical applications in healthcare, security, and analytics.',
       accent: 'from-indigo-500/20 to-purple-500/20 border-indigo-200 dark:border-indigo-900/60',
       iconBg: 'bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400',
     },
@@ -43,7 +43,7 @@ export default function About() {
         <div className="max-w-3xl mb-12">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-cyan-600 dark:text-cyan-400 mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Background & Mindset</span>
+            <span>Career Summary</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             About Me
@@ -71,15 +71,15 @@ export default function About() {
             <div className="pt-4 flex flex-wrap gap-4 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80">
                 <MapPin className="w-4 h-4 text-cyan-500" />
-                <span>Vijayawada, India</span>
+                <span>{PERSONAL_INFO.location}</span>
               </div>
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80">
                 <Calendar className="w-4 h-4 text-blue-500" />
-                <span>B.Tech (2024 - 2028)</span>
+                <span>B.Tech (Currently Pursuing)</span>
               </div>
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80">
                 <HeartHandshake className="w-4 h-4 text-indigo-500" />
-                <span>Hackathons & Team Player</span>
+                <span>VIT-AP Hackathon Finalist</span>
               </div>
             </div>
           </motion.div>
